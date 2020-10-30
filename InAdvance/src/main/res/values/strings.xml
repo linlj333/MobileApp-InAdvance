@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">InAdvance</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <string name="google_map_key" />
+    <!--    <string-array name="food_image">-->
+    <!--        <item>food_image1</item>-->
+    <!--        <item>food_image2</item>-->
+    <!--        <item>food_image3</item>-->
+    <!--        <item>food_image4</item>-->
+    <!--        <item>food_image5</item>-->
+    <!--        <item>food_image6</item>-->
+    <!--        <item>food_image7</item>-->
+    <!--        <item>food_image8</item>-->
+    <!--        <item>food_image9</item>-->
+    <!--    </string-array>-->
+    <string-array name="food_name">
+        <item>food_name1</item>
+        <item>food_name2</item>
+        <item>food_name3</item>
+        <item>food_name4</item>
+        <item>food_name5</item>
+        <item>food_name6</item>
+        <item>food_name7</item>
+        <item>food_name8</item>
+        <item>food_name9</item>
+    </string-array>
+    <string-array name="food_price">
+        <item>10.0</item>
+        <item>15.5</item>
+        <item>10.0</item>
+        <item>15.5</item>
+        <item>10.0</item>
+        <item>15.5</item>
+        <item>10.0</item>
+        <item>15.5</item>
+        <item>10.0</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_buiness_settings">BuinessSettingsActivity</string>
+
+</resources>

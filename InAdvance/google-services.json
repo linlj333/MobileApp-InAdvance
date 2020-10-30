@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "612804108966",
+    "firebase_url": "https://inadvance-1c813.firebaseio.com",
+    "project_id": "inadvance-1c813",
+    "storage_bucket": "inadvance-1c813.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612804108966:android:67801e12daac32271eca67",
+        "android_client_info": {
+          "package_name": "com.example.InAdvance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612804108966-uqt5mu7ieu17ek9nqa6jhes9eato6l5a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.InAdvance",
+            "certificate_hash": "a5149110716e8bf7ca3b7e2a3a13546364a61342"
+          }
+        },
+        {
+          "client_id": "612804108966-lt3g9dfgk1m55tgc67i1k8i0c3tvde57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBiOtet_IyZDu_moQow9JcnstpAnakIK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612804108966-lt3g9dfgk1m55tgc67i1k8i0c3tvde57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
