@@ -38,13 +38,13 @@ import java.util.HashMap;
 import java.util.List;
 import org.jetbrains.annotations.Nullable;
 
-public class SecondActivity extends AppCompatActivity implements GmapFragment.Fragment1Listener, Fragment2.Fragment2Listener{
+public class SecondActivity extends AppCompatActivity implements GmapFragment.Fragment1Listener, ListFragment.Fragment2Listener{
     private static String TAG = "Second Activity";
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private GmapFragment fragment1;
-    private Fragment2 fragment2;
+    private ListFragment listFragment;
     private RecommendFragment fragment3;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
@@ -83,7 +83,7 @@ public class SecondActivity extends AppCompatActivity implements GmapFragment.Fr
         viewPager =  findViewById(R.id.viewPager);
 
         fragment1 = new GmapFragment();
-        fragment2 = Fragment2.newInstance();
+        listFragment = ListFragment.newInstance();
         // setup here for switch the drawer, so cannot use fragment3 in setViewPager()
         fragment3 = new RecommendFragment();
 
@@ -96,7 +96,7 @@ public class SecondActivity extends AppCompatActivity implements GmapFragment.Fr
     private void setViewPager(ViewPager viewPager) {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragment(fragment1, "Search");
-        viewPagerAdapter.addFragment(fragment2, "List");
+        viewPagerAdapter.addFragment(listFragment, "List");
         viewPagerAdapter.addFragment(new RecommendFragment(), "Recommend");
         viewPager.setAdapter(viewPagerAdapter);
 
@@ -105,8 +105,8 @@ public class SecondActivity extends AppCompatActivity implements GmapFragment.Fr
 
     @Override
     public void onInputFragment1Sent(List<HashMap<String, String>> hashMaps) {
-       // Fragment2 fragment20 = Fragment2.newInstance();
-        fragment2.updateRank(hashMaps);
+       // ListFragment fragment20 = ListFragment.newInstance();
+        listFragment.updateRank(hashMaps);
     }
 
     @Override

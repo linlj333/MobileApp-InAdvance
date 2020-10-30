@@ -1,99 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/im_signup_logo"
+        android:layout_marginTop="15dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/appicon" />
+    <TextView
+        android:id="@+id/tv_signup_title"
+        android:layout_below="@+id/im_signup_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="InAdvance"
+        android:textStyle="italic"
+        android:textColor="#F5F52A"
+        android:textSize="30dp"
+        />
 
     <LinearLayout
         android:id="@+id/ll_signup"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        >
+        android:layout_marginTop="210dp"
+        android:background="@drawable/recyclerview_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
 
         <EditText
             android:id="@+id/fullname"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter Full Name"
-            android:inputType="textPersonName"
-            />
+            android:hint="FirstName  LastName"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/phone"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter Phone Number"
-            android:inputType="phone"
-            />
+            android:hint="Phone Number"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:inputType="phone" />
+
         <EditText
             android:id="@+id/semail"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter Email"
-            android:inputType="textEmailAddress"
-            />
+            android:hint="Email Address"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:inputType="textEmailAddress" />
+
         <EditText
             android:id="@+id/spassword1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter Password"
+            android:hint="Password"
             android:inputType="textPassword"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
              />
+
         <EditText
             android:id="@+id/spassword2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
             android:hint="Re-enter Password"
-            android:inputType="textPassword"
-            />
-       <RadioGroup
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:id="@+id/rg_signup"
-           android:orientation="horizontal"
-           android:layout_marginBottom="30dp"
-           android:layout_marginTop="20dp"
-           >
-        <RadioButton
-           android:id="@+id/rb_user"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="As User" />
+            android:inputType="textPassword" />
 
-           <RadioButton
-               android:id="@+id/rd_bussinessOwner"
-               android:layout_marginLeft="20dp"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="As Business Owner" />
-       </RadioGroup>
+        <RadioGroup
+            android:id="@+id/rg_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-         <Button
-             android:id="@+id/bsignup"
-             android:layout_width="200dp"
-             android:layout_height="wrap_content"
-             android:text="SIGN UP" />
+            <RadioButton
+                android:id="@+id/rb_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As User"
+                android:textStyle="bold" />
 
+            <RadioButton
+                android:id="@+id/rd_bussinessOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="As Business Owner"
+                android:textStyle="bold" />
+        </RadioGroup>
 
         <Button
-            android:id="@+id/bt_login"
-            android:layout_width="200dp"
+            android:id="@+id/bsignup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textSize="20dp"
+            android:text="Create your Account" />
+        <LinearLayout
+
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BACK TO LOG IN" />
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? "
+                android:textColor="#9E9E9E"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/signup_tv_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Login here"
+                android:textStyle="bold"
+                android:textColor="#4E68E1"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/bt_login"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_marginRight="50dp"-->
+<!--            android:text="Back to Login" />-->
 
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

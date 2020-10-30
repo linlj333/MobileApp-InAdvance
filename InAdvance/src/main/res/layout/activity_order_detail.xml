@@ -2,10 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="30dp"
+        android:background="@drawable/recyclerview_background"
         android:id="@+id/firestore_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,10 +17,12 @@
 
     <Button
         android:id="@+id/btn_order_return"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/firestore_list"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:text="Home" />
+
 </RelativeLayout>
     <!--    tools:context=".OrderDetail">-->

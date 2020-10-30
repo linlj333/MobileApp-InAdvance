@@ -5,8 +5,13 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -28,10 +33,13 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     private EditText email, password;
     private Button loginbutton;
-    private Button usersignup;
    // private database db;
     private FirebaseAuth mAuth;
     FirebaseFirestore firestore;
+    private Animation smalltobig, bottomtotop;
+    private ImageView logo;
+    private TextView signin_title, usersignup;
+    private LinearLayout signin_linearlayout;
 
 
     @Override
@@ -45,7 +53,15 @@ public class MainActivity extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         loginbutton =  findViewById(R.id.blogin);
-        usersignup = findViewById(R.id.tvsignup);
+        usersignup = findViewById(R.id.main_tv_signup);
+        signin_linearlayout = findViewById(R.id.ll_signin);
+        smalltobig = AnimationUtils.loadAnimation(this,R.anim.small_to_big);
+        bottomtotop = AnimationUtils.loadAnimation(this,R.anim.bottom_to_top);
+        logo = findViewById(R.id.im_signin_logo);
+        signin_title = findViewById(R.id.tv_signin_title);
+        logo.startAnimation(smalltobig);
+        signin_title.startAnimation(smalltobig);
+        signin_linearlayout.startAnimation(bottomtotop);
       //  sharedPreferences = this.getSharedPreferences("com.example.InAdvance", Context.MODE_PRIVATE);
 
         loginbutton.setOnClickListener(new View.OnClickListener() {

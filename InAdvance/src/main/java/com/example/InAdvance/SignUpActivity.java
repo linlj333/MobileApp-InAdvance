@@ -8,11 +8,16 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -28,17 +33,19 @@ import java.util.Map;
 
 public class SignUpActivity extends AppCompatActivity {
 
-    private EditText fName, email1, password1, password2;
-    private Button signupbutton, userlogin;
-    private EditText phoneNum;
+    private EditText fName, email1, password1, password2, phoneNum;
+    private Button signupbutton;
+    private TextView signup_title, userlogin;
     private RadioGroup radioGroup_signup;
     private RadioButton isUser, isBusinessOwner;
    // private database db;
    private FirebaseAuth mAuth;
     FirebaseFirestore firestore;
     String userID;
-   // ProgressBar progressBar;
     String TAG ="ABC";
+    private ImageView logo;
+    private Animation smalltobig,bottomtotop;
+    private LinearLayout signup_linearlayout;
 
 
     @Override
@@ -46,13 +53,20 @@ public class SignUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         setupUIViews2();
-        getSupportActionBar().setTitle("Sign Up Page");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         radioGroup_signup = findViewById(R.id.rg_signup);
         isUser = findViewById(R.id.rb_user);
         isBusinessOwner = findViewById(R.id.rd_bussinessOwner);
+        signup_linearlayout = findViewById(R.id.ll_signup);
+        signup_title = findViewById(R.id.tv_signup_title);
 
+        smalltobig = AnimationUtils.loadAnimation(this,R.anim.small_to_big);
+        bottomtotop = AnimationUtils.loadAnimation(this,R.anim.bottom_to_top);
+        logo = findViewById(R.id.im_signup_logo);
+        logo.startAnimation(smalltobig);
+        signup_title.startAnimation(smalltobig);
+        signup_linearlayout.startAnimation(bottomtotop);
 
         isUser.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -188,7 +202,7 @@ public class SignUpActivity extends AppCompatActivity {
         password1 =  findViewById(R.id.spassword1);
         password2 =  findViewById(R.id.spassword2);
         signupbutton =  findViewById(R.id.bsignup);
-        userlogin =  findViewById(R.id.bt_login);
+        userlogin =  findViewById(R.id.signup_tv_signin);
     }
 
 

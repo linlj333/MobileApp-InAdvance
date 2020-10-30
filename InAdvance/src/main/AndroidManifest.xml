@@ -23,26 +23,26 @@
         android:theme="@style/AppTheme">
 
         <activity android:name="com.example.InAdvance.BusinessAboutMe"
-            android:label="InAdvance"
+            android:label="AboutMe"
             android:parentActivityName="com.example.InAdvance.BusinessOwner"></activity>
         <activity
             android:name="com.example.InAdvance.BuinessSettingsActivity"
-            android:label="InAdvance"
+            android:label="Settings"
             android:parentActivityName="com.example.InAdvance.BusinessOwner" />
         <activity
             android:name="com.example.InAdvance.SettingsActivity"
-            android:label="InAdvance"
+            android:label="Settings"
             android:parentActivityName="com.example.InAdvance.SecondActivity" />
         <activity
             android:name="com.example.InAdvance.AboutMe"
-            android:label="InAdvance"
+            android:label="AboutMe"
             android:parentActivityName="com.example.InAdvance.SecondActivity" />
         <activity
             android:name="com.example.InAdvance.OrderDetail"
-            android:label="InAdvance" />
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+            />
         <activity
             android:name="com.example.InAdvance.CustomerOrder"
-            android:label="InAdvance"
             android:parentActivityName="com.example.InAdvance.BusinessOwner" />
         <activity android:name="com.example.InAdvance.ScanActivity" />
         <activity
@@ -51,12 +51,14 @@
             android:theme="@style/Theme.MaterialComponents.Light" />
         <activity
             android:name="com.example.InAdvance.QR_CodeActivity"
-            android:label="InAdvance"
-            android:theme="@style/Theme.MaterialComponents.Light" />
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+            />
+
         <activity android:name="com.example.InAdvance.MenuActivity" />
         <activity
             android:name="com.example.InAdvance.SignUpActivity"
-            android:parentActivityName="com.example.InAdvance.MainActivity" /> <!-- <activity android:name=".SecondActivity" /> -->
+            android:theme="@style/AppTheme.NoActionBar"
+            /> <!-- <activity android:name=".SecondActivity" /> -->
         <activity
             android:name="com.example.InAdvance.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

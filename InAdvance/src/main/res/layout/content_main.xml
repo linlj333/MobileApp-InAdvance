@@ -39,8 +39,8 @@ tools:context=".SecondActivity">
     android:id="@+id/viewPager"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="50dp"
     app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+<!--    android:layout_marginBottom="50dp"-->
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

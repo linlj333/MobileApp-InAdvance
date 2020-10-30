@@ -22,10 +22,10 @@ import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Fragment2#newInstance} factory method to
+ * Use the {@link ListFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Fragment2 extends Fragment implements RecyclerViewAdapter.RecyclerViewClickListener{
+public class ListFragment extends Fragment implements RecyclerViewAdapter.RecyclerViewClickListener{
     //List<RecyclerViewRow> recyclerViewRowList ;
     List<RecyclerViewRow> recyclerViewRowList;
     SharedPreferences sharedPreferences;
@@ -43,7 +43,7 @@ public class Fragment2 extends Fragment implements RecyclerViewAdapter.RecyclerV
     private String mParam2;
     private View view;
 
-    private Fragment2() {
+    private ListFragment() {
         super();
     }
 
@@ -53,17 +53,17 @@ public class Fragment2 extends Fragment implements RecyclerViewAdapter.RecyclerV
      *
 //     * @param param1 Parameter 1.
 //     * @param param2 Parameter 2.
-     * @return A new instance of fragment Fragment2.
+     * @return A new instance of fragment ListFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Fragment2 newInstance() {
-        if(Fragment2.Instance!=null){
-            return (Fragment2) Fragment2.Instance;
+    public static ListFragment newInstance() {
+        if(ListFragment.Instance!=null){
+            return (ListFragment) ListFragment.Instance;
         }
-        Fragment2 fragment = new Fragment2();
+        ListFragment fragment = new ListFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
-        Fragment2.Instance= fragment;
+        ListFragment.Instance= fragment;
 
         return fragment;
     }
@@ -125,7 +125,7 @@ public class Fragment2 extends Fragment implements RecyclerViewAdapter.RecyclerV
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_2, container, false);
+        View view = inflater.inflate(R.layout.fragment_list, container, false);
         return view;
     }
 

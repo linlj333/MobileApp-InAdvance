@@ -7,11 +7,13 @@ import android.annotation.SuppressLint;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 import java.util.Calendar;
 import mehdi.sakout.aboutpage.AboutPage;
 import mehdi.sakout.aboutpage.Element;
 
 public class AboutMe extends AppCompatActivity {
+   // private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +23,14 @@ public class AboutMe extends AppCompatActivity {
         if (NavUtils.getParentActivityName(AboutMe.this) != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
-
+//
+//        toolbar = findViewById(R.id.tooBar);
+//        setSupportActionBar(toolbar);
+//
+//        if (getSupportActionBar() != null){
+//            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//            getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        }
 
         Element adsElement = new Element();
         View aboutPage = new AboutPage(this)
