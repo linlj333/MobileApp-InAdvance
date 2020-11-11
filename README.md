@@ -1,4 +1,4 @@
-# About the Project: MobileApp-InAdvance
+# MobileApp-InAdvance
 The Online Food Ordering System(InAdvance) is an Android Application. It has a food ordering app for serving both restaurant owners and customers.
 
 
@@ -23,7 +23,7 @@ Restaurant Owner can download and save the QR-Code into grallery photo and the s
   - Android Studio
   - AVD emulator and real device
 
-
+###About the Project:
 <table>
   <tr>
     <td> Customer Version: </td>
