@@ -1,10 +1,4 @@
 # MobileApp-InAdvance
-## Table of contents
-* [About the Project](#about-the-project)
-* [Features](#features)
-* [Technologies](#technologies)
-* [Tools](#tools)
-
 
 See Gifs below to understand flow of App !
 <table>
@@ -17,7 +11,12 @@ See Gifs below to understand flow of App !
     <td><img src="signinAsBusiness.gif" width=270 height=560></td>
   </tr>
  </table>
-
+ 
+## Table of contents
+* [About the Project](#about-the-project)
+* [Features](#features)
+* [Technologies](#technologies)
+* [Tools](#tools)
 
 ## About the Project:
 The Online Food Ordering System(InAdvance) is an Android Application. It has a food ordering app for serving both restaurant owners and customers.
