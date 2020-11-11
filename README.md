@@ -47,7 +47,7 @@ The Online Food Ordering System(InAdvance) is an Android Application. It has a f
   - Real Device
 
 ## Download
-The latest Android apk can also be downloaded [InAdvance.apk](https://github.com/linlj333/MobileApp-InAdvance/blob/master/InAdvance.apk)
+The latest Android apk can also be downloaded [here](files/InAdvance.apk)
 
 
 
