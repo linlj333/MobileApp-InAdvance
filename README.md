@@ -21,7 +21,8 @@ Restaurant Owner can download and save the QR-Code into grallery photo and the s
 
 # Tools
   - Android Studio
-  - AVD emulator and real device
+  - AVD Emulator
+  - Real Device
 
 # About the Project:
 <table>
