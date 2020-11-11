@@ -2,7 +2,7 @@
 The Online Food Ordering System(InAdvance) is an Android Application. It has a food ordering app for serving both restaurant owners and customers.
 
 
-##Features
+#Features
 Login & Register Page
 Authentication system guarding the app core
 Customers can update profile photo
@@ -14,12 +14,12 @@ Restaurant Owner can scan the QR-Code with InAdvance App
 Restaurant Owner can download and save the QR-Code into grallery photo and the scan it by using App 
 
 
-#Technologies
+- Technologies
   - Java 
   - Firebase 
   - Google Map Api
 
-#Tools
+- Tools
   - Android Studio
   - AVD emulator and real device
 
