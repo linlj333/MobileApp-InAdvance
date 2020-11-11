@@ -15,9 +15,9 @@ The Online Food Ordering System(InAdvance) is an Android Application. It has a f
 
 
 # Technologies
-  - Java 
-  - Firebase 
-  - Google Map Api
+  - [Java](https://go.java/?intcmp=gojava-banner-java-com) 
+  - [Firebase](https://firebase.google.com/) 
+  - [Google Map Api](https://developers.google.com/maps/documentation/android-sdk/current-place-tutorial)
 
 # Tools
   - Android Studio
