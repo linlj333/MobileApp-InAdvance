@@ -17,6 +17,7 @@ See Gifs below to understand flow of App !
 * [Features](#features)
 * [Technologies](#technologies)
 * [Tools](#tools)
+* [Download](#download)
 
 ## About the Project:
 The Online Food Ordering System(InAdvance) is an Android Application. It has a food ordering app for serving both restaurant owners and customers.
@@ -45,8 +46,8 @@ The Online Food Ordering System(InAdvance) is an Android Application. It has a f
   - AVD Emulator
   - Real Device
 
-
-
+## Download
+The latest Android apk can also be downloaded [here].
 
 
 
