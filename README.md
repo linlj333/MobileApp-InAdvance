@@ -12,7 +12,7 @@ See Gifs below to understand flow of App !
   </tr>
  </table>
  
-## Table of contents
+## Table of Contents
 * [About the Project](#about-the-project)
 * [Features](#features)
 * [Technologies](#technologies)
