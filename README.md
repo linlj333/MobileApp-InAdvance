@@ -1,5 +1,5 @@
 # MobileApp-InAdvance
-**Table of contents**
+## Table of contents
 * [About the Project](#about-the-project)
 * [Features](#features)
 * [Technologies](#technologies)
@@ -8,11 +8,11 @@
 
 
 
-# About the Project:
+## About the Project:
 The Online Food Ordering System(InAdvance) is an Android Application. It has a food ordering app for serving both restaurant owners and customers.
 
 
-# Features
+## Features
 - Login & Register Page
 - Authentication system guarding the app core
 - Customers can update profile photo
@@ -24,17 +24,17 @@ The Online Food Ordering System(InAdvance) is an Android Application. It has a f
 - Restaurant Owner can download and save the QR-Code into grallery photo and the scan it by using App 
 
 
-# Technologies
+## Technologies
   - [Java](https://go.java/?intcmp=gojava-banner-java-com) 
   - [Firebase](https://firebase.google.com/) 
   - [Google Map Api](https://developers.google.com/maps/documentation/android-sdk/current-place-tutorial)
 
-# Tools
+## Tools
   - Android Studio
   - AVD Emulator
   - Real Device
 
-# Demo
+## Demo
 <table>
   <tr>
     <td> Customer Version: </td>
