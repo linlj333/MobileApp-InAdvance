@@ -1,4 +1,3 @@
-README.md
 # MobileApp-InAdvance
 The Online Food Ordering System(InAdvance) is an Android Application. It has a food ordering app for serving both restaurant owners and customers.
 
