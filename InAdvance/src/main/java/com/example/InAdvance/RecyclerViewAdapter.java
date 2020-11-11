@@ -57,15 +57,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            textViewName = (TextView) itemView.findViewById(R.id.tv_name);
-            textViewAddress = (TextView) itemView.findViewById(R.id.tv_address);
-            textViewRating = (TextView) itemView.findViewById(R.id.tv_rating);
+            textViewName = itemView.findViewById(R.id.tv_name);
+            textViewAddress = itemView.findViewById(R.id.tv_address);
+            textViewRating = itemView.findViewById(R.id.tv_rating);
             sharedPreferences = itemView.getContext().getSharedPreferences("com.example.InAdvance", Context.MODE_PRIVATE);
             itemView.setOnClickListener(this);
 
             listener = new RecyclerViewAdapter.RecyclerViewClickListener() {
                 @Override
                 public void onClick(View view, int position) {
+                    textViewName = view.findViewById(R.id.tv_name);
+                    textViewAddress = view.findViewById(R.id.tv_address);
+                    textViewRating = view.findViewById(R.id.tv_rating);
                             sharedPreferences.edit().putString("restaurantname",textViewName.getText().toString()).apply();
                             sharedPreferences.edit().putString("restaurantaddress",textViewAddress.getText().toString()).apply();
                             Intent intent = new Intent(view.getContext(), MenuActivity.class);

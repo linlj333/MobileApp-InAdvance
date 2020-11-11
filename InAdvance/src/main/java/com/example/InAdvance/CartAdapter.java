@@ -7,13 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
 import com.google.gson.Gson;
-
 import java.util.LinkedHashMap;
 
 
@@ -80,8 +77,14 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.MyViewHolder> 
                     total+=num1*price;
                     oldnum=num1;
                     TextView price_total = (TextView) itemView.getRootView().findViewById(R.id.price_total);
+
                     price_total.setText(String.valueOf(total));
-                    HashMap.put(myText1.getText().toString(),num);
+                    if(num1==0){
+                        HashMap.remove(myText1.getText().toString());
+                    }else{
+                        HashMap.put(myText1.getText().toString(),num);
+                    }
+
                     Gson gson = new Gson();
                     String hashMapString = gson.toJson(HashMap);
 //                    sharedPreferences = itemView.getContext().getSharedPreferences("com.example.InAdvance", Context.MODE_PRIVATE);
