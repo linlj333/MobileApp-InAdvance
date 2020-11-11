@@ -14,14 +14,14 @@ Restaurant Owner can scan the QR-Code with InAdvance App
 Restaurant Owner can download and save the QR-Code into grallery photo and the scan it by using App 
 
 
-##Technologies
-Java 
-Firebase 
-Google Map Api
+#Technologies
+  - Java 
+  - Firebase 
+  - Google Map Api
 
-##Tools
-Android Studio
-AVD emulator and real device
+#Tools
+  - Android Studio
+  - AVD emulator and real device
 
 
 <table>
